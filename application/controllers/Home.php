@@ -131,6 +131,7 @@ class Home extends CI_Controller {
 			$data["aluno_img"] = "/public/images/alunos/" . $file_name;
 
 			if(empty($data["aluno_id"])){
+				unset($data["aluno_id"]);
 				$this->global_model->insert('alunos', $data);
 			}
 			else{
