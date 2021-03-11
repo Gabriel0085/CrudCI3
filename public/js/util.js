@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost/testeCodeIgn/";
+const BASE_URL = "http://localhost/projetos/crudCI3/";
 
 function clearErrors(){
     $(".has-error").removeClass("has-error");
@@ -36,7 +36,7 @@ function uploadImg(input_file, img, input_path) {
 	form_data.append("image_file", img_file);
 
 	$.ajax({
-		url: BASE_URL + "login/ajax_import_image",
+		url: BASE_URL + "home/import-image",
 		dataType: "json",
 		cache: false,
 		contentType: false,
